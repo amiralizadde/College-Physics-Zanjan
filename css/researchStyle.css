@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif; 
+}
+header{
+    overflow-x: hidden; 
+}
+
+#header-image{
+    width: 100%;
+    height: 40vw;
+    background: url('../image/research/atom-header.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+@media screen and (max-width:767.5px){
+    #header-image{
+        height: 60vw;
+    }
+}
+/* ______________<p>Most Recent Publication</p>_______________ */
+
+#resent-publication{
+    padding-top:50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#resent-publication  img{
+    width: 100%;
+    height: 100%;
+}
+#resent-publication .container-fluid .col-8,
+#resent-publication .container-fluid .col-12{
+    margin-top:30px;
+}
+@media screen and (max-width:991.5px) {
+
+    #resent-publication .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width:576.5px) {
+
+    #resent-publication #Row{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #resent-publication .container-fluid .col-12{
+        margin-top: unset;
+    }
+    #resent-publication .container-fluid .col-sm-4{
+        margin-top: 15px;
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    #resent-publication  img{
+        height: 45vh;
+    }
+}
+
+/* _____________________onGoingProject__________________________________________________________ */
+#onGoingProject a{
+    text-decoration: none;
+}
+#onGoingProject img{
+    width: 100%;
+    height: 100%;
+}
+#onGoingProject .fs-6{
+    width: 80%;
+    text-align: justify;
+}
+
+@media screen and (max-width:991.5px){
+
+    #onGoingProject .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #onGoingProject .col-lg-8{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #onGoingProject .fs-6{
+        width: 100%;
+        line-height: 2em;
+    }
+    
+}
+#nameLink{
+    color: rgb(0, 0, 0);
+}
+#nameLink:hover{
+    color: blue;
+}
